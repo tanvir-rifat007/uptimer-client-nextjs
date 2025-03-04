@@ -67,6 +67,7 @@ export const useHomeTableBtnGroup = ({
       });
     } catch (error) {
       showErrorToast(`Error ${active ? "activating" : "pausing"} monitor.`);
+      console.log(error);
     }
   };
 
@@ -96,6 +97,7 @@ export const useHomeTableBtnGroup = ({
       }
     } catch (error) {
       showErrorToast("Error deleting monitor.");
+      console.log(error);
     }
   };
 
