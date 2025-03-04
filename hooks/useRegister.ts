@@ -1,3 +1,4 @@
+"use client";
 import { DispatchProps, MonitorContext } from "@/context/MonitorContext";
 import { IUserAuth } from "@/interfaces/user.interface";
 import { AUTH_SOCIAL_USER, REGISTER_USER } from "@/queries/auth";
@@ -114,6 +115,7 @@ async function submitUserData(
     }
   } catch (error) {
     showErrorToast("Invalid credentials");
+
     console.log(error);
   }
 }
