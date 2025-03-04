@@ -14,9 +14,9 @@ import { CachePersistor, LocalStorageWrapper } from "apollo3-cache-persist";
 import { Kind, OperationTypeNode } from "graphql";
 import { createClient } from "graphql-ws";
 
-const httpUrl: string = "http://localhost:8000/graphql";
+const httpUrl: string = "https://uptimer-express-server.onrender.com/graphql";
 
-const wsUrl: string = "ws://localhost:8000/graphql";
+const wsUrl: string = "https://uptimer-express-server.onrender.com/graphql";
 
 const httpLink: ApolloLink = createHttpLink({
   uri: httpUrl,
