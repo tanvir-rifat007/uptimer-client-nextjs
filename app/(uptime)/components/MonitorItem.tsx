@@ -1,4 +1,4 @@
-import TextAreaInput from "@/components/TextAreaInput";
+import TextAreaInput from "@/components/TextareaInput";
 import TextInput from "@/components/TextInput";
 import { MonitorItemProps } from "@/interfaces/monitor.interface";
 import clsx from "clsx";
