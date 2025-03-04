@@ -1,3 +1,5 @@
+"use client";
+
 import { DispatchProps, MonitorContext } from "@/context/MonitorContext";
 import { IUserAuth } from "@/interfaces/user.interface";
 import { AUTH_SOCIAL_USER, LOGIN_USER } from "@/queries/auth";
@@ -34,7 +36,7 @@ export const useLogin = (): IUserAuth => {
       setValidationErrors({
         username: resultSchema.error.format().username?._errors[0] as string,
         password: resultSchema.error.format().password?._errors[0] as string,
-      }); 
+      });
     } else {
       submitUserData(
         resultSchema.data,
